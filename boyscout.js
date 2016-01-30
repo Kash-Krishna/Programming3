@@ -13,13 +13,16 @@ var bePrepared = function () {
       if (tempF < 60) {
             myActionText = " Take long-johns!";
         }
-      if ((tempF >= 60) && (tempC < 75)) {
+      else if ((tempF >= 60) && (tempC < 75)) {
                 myActionText = " Have Fun!";
             }
-      if (tempF >= 75) {
+      else if (tempF >= 75) {
                 myActionText = " Take Sunscreen!";
             }
- 
+      else{
+                myActionText = " You did it wrong"; 
+      }
+      
       // build a complete sentence
       newText = "If the temperature is " + tempF + " &deg;F (" + tempC + " &deg;C): " + myActionText;
       //push the sentence back to the HTML page (using the ID of the markup element: 'myAnswer')
