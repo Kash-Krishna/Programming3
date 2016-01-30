@@ -13,7 +13,7 @@ var bePrepared = function () {
       if (tempF < 60) {
             myActionText = " Take long-johns!";
         }
-      else if ((tempF >= 60) && (tempC < 75)) {
+      else if ((tempF >= 60) && (tempF < 75)) {
                 myActionText = " Have Fun!";
             }
       else if (tempF >= 75) {
